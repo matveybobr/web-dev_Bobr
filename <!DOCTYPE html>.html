@@ -1,122 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Matvey Bobr PW1</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Style the header */
-* {
-  box-sizing: border-box;
-}
-header {
-  background-color: #150b9b;
-  padding: 20px;
-  text-align: center;
-  font-size: 15px;
-  color: white;
-}
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 15%;
-  background: #c6c6c6;
-  padding: 10px;
-  height: 1270px;
-}
-article {
-  float: left;
-  padding: 10px;
-  width: 85%;
-  height: 1270px;
-  background-color: #ffffff ;
-   /* only for demonstration, should be removed */
-}
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* Style the footer */
-footer {
-  background-color: #303030;
-  padding: 5px;
-  font-size: 20px;
-  text-align: center;
-  color: white;
-}
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 800px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 3 Report</title>
+    <style>
+        /* CSS styles for borders */
+        .border1 {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .border2 {
+            border: 1px dashed red;
+            padding: 8px;
+            margin: 8px;
+        }
+
+        .inline-border {
+            border: 2px dotted green;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-
-<header>
-  <h2>Matvey PW1</h2>
-</header>
-<section>
-  <nav>
-    <ul>
-      <li><a href="#1">When HTML5 has become a standard? What were the main reasons for developing
-        new standard?</a></li>
-      <li><a href="#2">What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</a></li>
-      <li><a href="#3">What is the minimal HTML page code?</a></li>
-      <li><a href="#4">Comment on semantic and presentational markup. Why presentational markup is
-        considered deprecated now?</a></li>
-      <li><a href="#5">How you can check browser support for particular tag or attribute?</a></li>
-      <li><a href="#6">What are the audio and video formats, officially supported by HTML standard? What
-        happens if you use other format?</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1 id="1">a)When HTML5 has become a standard? What were the main reasons for developing new standard?</h1>
-    <dt>HTML5 became a standard on October 28, 2014. It was developed to address the need for enhanced multimedia support, improved mobile device compatibility, better semantics and accessibility, offline capabilities, enhanced performance, and standardization for interoperability across different browsers and platforms.
-    
-    <h1 id="2">b)What is a difference between W3C HTML5 and WHATWG HTML Living Standard?</h1>
-    <p>The main difference between W3C HTML5 and WHATWG HTML Living Standard lies in their update processes. W3C HTML5 follows a traditional standardization model with periodic updates, while WHATWG HTML Living Standard is continuously updated to reflect ongoing developments in web technology.<p>
-    
-    <h1 id="3">c)What is the minimal HTML page code?</h1>
-    <p>This code includes the basic structure of an HTML document:</p>
-<dd>1. DOCTYPE html: Declares the document type and version of HTML being used.
-<p>2. html: The root element of the HTML document.</p>
-<p>3. head: Contains metadata about the document, such as the title.</p>
-<p>4. title: Defines the title of the HTML document, which appears in the browser's title bar or tab.</p>
-<p>5. body: Contains the visible content of the HTML document, such as text, images, links, etc.</p>
-<h1 id="4">d)Comment on semantic and presentational markup. Why presentational markup is considered deprecated now?</h1>
-    <p>Semantic markup provides meaningful structure to content, aiding accessibility and search engine optimization. Presentational markup, focused on style, is deprecated as it hinders accessibility and complicates maintenance.</p>
-    
-    <h1 id="5">e)How you can check browser support for particular tag or attribute?</h1>
-    <p>To check browser support for a specific HTML tag or attribute, visit websites like MDN Web Docs or Can I Use. These platforms offer detailed information on the compatibility of various web technologies across different browsers, enabling developers to make informed decisions about feature usage.</p>
-
-   <h1 id="6">f)What are the audio and video formats, officially supported by HTML standard? What happens if you use other format?</h1>
-    <p>The officially supported audio and video formats in HTML are:
-    <p> 1. Audio: The supported audio formats are MP3, Ogg Vorbis, and WAV.
-    <p> 2. Video: The supported video formats are MP4, WebM, and Ogg Theora.
-    <p> If you use a format other than those officially supported, the behavior may vary depending on the browser. Some browsers may attempt to play the content using built-in codecs or plugins, while others may fail to render the content altogether. It's important to ensure compatibility with the supported formats to ensure consistent playback across different browsers and devices.</p>
-  </article>
-</section>
-<footer>
-  <h3>Video</h3>
-  <video  width="500" controls>
-    <source src="bmw adv.mp4" type="video/mp4">
-</video>
-
-<h3>Audio</h3>
-<audio controls>
-<source src="zvonok.mp3" type="audio/mp3">
-</audio>
-<p><img src="Image.jpg" alt="image" ></p>
-<p>this lab work was very interesting. the first experience in creating a website was not easy, but I gained a lot of new knowledge</p>
-
-
-</footer>
-
+    <main>
+        <article>
+            <h1>Practical 3 Report</h1>
+            <section>
+                <h2>Opening Developer Console in Firefox and Safari</h2>
+                <p>To open the developer console in Mozilla Firefox, you can press <strong>F12</strong> or <strong>Ctrl+Shift+I</strong>. In Safari, you can press <strong>Option+Command+C</strong>.</p>
+            </section>
+            <section>
+                <h2>Choosing Between Absolute and Relative Links</h2>
+                <p>Absolute links include the full URL, while relative links specify the path relative to the current page. Generally, relative links are preferable for internal navigation within a website as they are more flexible and easier to manage. Absolute links are suitable when linking to external resources or when the file structure might change.</p>
+            </section>
+            <section>
+                <h2>Image Formats in Web Development</h2>
+                <p>JPG, GIF, and PNG are common image formats. JPG is best for photographs, GIF for simple graphics with few colors and animations, and PNG for images with transparency. WEBP is a modern image type developed by Google, offering superior compression. SVG is a vector format suitable for graphics and icons, scalable without loss of quality.</p>
+            </section>
+            <section>
+                <h2>Screenshot</h2>
+                <img src="screenshot.png" width="350" height="200" alt="Screenshot" style="float: left; margin-right: 10px;">
+                <p>This is the screenshot of the developer console in safari.</p>
+            </section>
+            <section>
+                <h2>Lorem Ipsum Paragraphs with Different Backgrounds</h2>
+                <p class="border1" style="background-color: #f0f0f0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="border2" style="background-color: rgba(255, 0, 0, 0.5);">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="inline-border" style="background: linear-gradient(to right, #ffcc00, #ff6600);">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="inline-border" style="background: repeating-linear-gradient(45deg, #00ff00, #00ff00 10%, #00ccff 10%, #00ccff 20%);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="border1" style="background-image: url('background.jpg'); background-size: cover;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="border2" style="background-image: url('background1.jpg'), url('background2.jpg'); background-size: contain, cover; background-repeat: no-repeat;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
