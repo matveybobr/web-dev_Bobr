@@ -3,59 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical 3 Report</title>
+    <title>Practical 5 - CSS Fundamentals</title>
     <style>
-        /* CSS styles for borders */
-        .border1 {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 10px;
+        /* Styles for images */
+        img {
+            max-width: 400px;
+            float: right;
+            margin: 0 0 10px 10px;
         }
-
-        .border2 {
-            border: 1px dashed red;
-            padding: 8px;
-            margin: 8px;
+        /* Styles for navigation */
+        nav {
+            text-align: center;
         }
-
-        .inline-border {
-            border: 2px dotted green;
-            padding: 5px;
-            margin: 5px;
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #666;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>CSS Fundamentals</h1>
+        <nav>
+            <a href="#box-model">Box Model</a>
+            <a href="#clearfix-hack">Clearfix Hack</a>
+            <a href="#margin-collapse">Margin Collapse</a>
+            <a href="#holy-grail-layout">Holy Grail Layout</a>
+        </nav>
+    </header>
     <main>
-        <article>
-            <h1>Practical 3 Report</h1>
-            <section>
-                <h2>Opening Developer Console in Firefox and Safari</h2>
-                <p>To open the developer console in Mozilla Firefox, you can press <strong>F12</strong> or <strong>Ctrl+Shift+I</strong>. In Safari, you can press <strong>Option+Command+C</strong>.</p>
-            </section>
-            <section>
-                <h2>Choosing Between Absolute and Relative Links</h2>
-                <p>Absolute links include the full URL, while relative links specify the path relative to the current page. Generally, relative links are preferable for internal navigation within a website as they are more flexible and easier to manage. Absolute links are suitable when linking to external resources or when the file structure might change.</p>
-            </section>
-            <section>
-                <h2>Image Formats in Web Development</h2>
-                <p>JPG, GIF, and PNG are common image formats. JPG is best for photographs, GIF for simple graphics with few colors and animations, and PNG for images with transparency. WEBP is a modern image type developed by Google, offering superior compression. SVG is a vector format suitable for graphics and icons, scalable without loss of quality.</p>
-            </section>
-            <section>
-                <h2>Screenshot</h2>
-                <img src="screenshot.png" width="350" height="200" alt="Screenshot" style="float: left; margin-right: 10px;">
-                <p>This is the screenshot of the developer console in safari.</p>
-            </section>
-            <section>
-                <h2>Lorem Ipsum Paragraphs with Different Backgrounds</h2>
-                <p class="border1" style="background-color: #f0f0f0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="border2" style="background-color: rgba(255, 0, 0, 0.5);">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="inline-border" style="background: linear-gradient(to right, #ffcc00, #ff6600);">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p class="inline-border" style="background: repeating-linear-gradient(45deg, #00ff00, #00ff00 10%, #00ccff 10%, #00ccff 20%);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                <p class="border1" style="background-image: url('background.jpg'); background-size: cover;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p class="border2" style="background-image: url('background1.jpg'), url('background2.jpg'); background-size: contain, cover; background-repeat: no-repeat;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </section>
+        <article id="box-model">
+            <h2>Box Model in CSS</h2>
+            <p>The box model in CSS refers to how elements are rendered as rectangular boxes, consisting of content, padding, border, and margin.</p>
+            <img src="boxmodel.jpg" height="150" alt="Box Model">
+            <p>The <code>box-sizing</code> property defines how the total width and height of an element are calculated. The default value is <code>content-box</code>, where the width and height only include the content, excluding padding and border. Setting it to <code>border-box</code> includes padding and border in the width and height calculations.</p>
+        </article>
+        <article id="clearfix-hack">
+            <h2>Clearfix Hack</h2>
+            <p>The clearfix hack is a CSS technique used to fix the issue of a container not expanding to contain its floated children.</p>
+            <img src="clearfixhack.png" height="150" alt="Clearfix Hack Example">
+            <p>This hack is applied to a parent element containing floated children by adding a clearfix class or using the <code>::after</code> pseudo-element with <code>clear: both</code> property.</p>
+        </article>
+        <article id="margin-collapse">
+            <h2>Margin Collapse</h2>
+            <p>Margin collapse is a phenomenon in CSS where the margins of adjacent elements collapse into a single margin under certain conditions.</p>
+            <img src="marginecollapse.png" height="150" alt="Margin Collapse Diagram">
+            <p>Use cases for <code>margin: auto</code> include centering an element horizontally within its container. Negative margin values are often used for creating overlapping effects or adjusting spacing between elements.</p>
+        </article>
+        <article id="holy-grail-layout">
+            <h2>Holy Grail Layout</h2>
+            <p>The Holy Grail layout is a common web design pattern consisting of a header, footer, and three columns with a main content area in the center.</p>
+            <img src="HolyGrail.png" height="150" alt="Holy Grail Layout Example">
+            <p>The problem with achieving the Holy Grail layout traditionally was maintaining equal height columns without using hacks like faux columns or JavaScript.</p>
+            <p>Modern ways to achieve the Holy Grail layout include using flexbox or CSS grid layout, which provide more robust and flexible solutions without relying on hacks.</p>
         </article>
     </main>
+    <footer>
+        <p>Created by: Matvey Bobr</p>
+        <p>Course: web design</p>
+        <p>Date: 22.04.2024, Monday</p>
+        <p>Place: School of business</p>
+        </ul>
+    </footer>
 </body>
 </html>
