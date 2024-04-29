@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <style>
+        /* Basic styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Main styles */
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        /* Top news styles */
+        .top-news {
+            flex: 1;
+            margin-right: 20px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .top-news img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* News styles */
+        .news {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .news-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .news-item h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .news-item p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .news-item button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            flex: 1;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .news-item img {
+                order: -1; /* Move the image above the paragraph on tablet screens */
+            }
+
+            .news-item p {
+                display: block; /* Show the paragraph below the image on tablet screens */
+            }
+
+            @media screen and (max-width: 480px) {
+                .news-item p {
+                    display: none; /* Hide the paragraph on mobile screens */
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website</h1>
+    </header>
+
+    <main class="main">
+        <section class="top-news">
+            <!-- Top news content goes here -->
+            <img src="top-news-image.png" alt="Top News Image">
+            <h2>Top News Heading</h2>
+            <h3>News Title 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Read More</button>
+        </section>
+
+        <section class="news">
+            <!-- News content goes here -->
+            <div class="news-item">
+                <img src="news-thumbnail.jpg" alt="News Thumbnail">
+                <h2>News Title 2</h2>
+                <p class="meta-info">Published on January 1, 2024</p>
+                <button>Read More</button>
+                <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <!-- Repeat the above news item structure for each news item -->
+        </section>
+
+        <aside class="sidebar">
+            <!-- Sidebar content goes here -->
+            <h2>Navigation Menu</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
