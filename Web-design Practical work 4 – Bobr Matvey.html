@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 4</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    /* Task 5: CSS Styles */
+    * {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+    }
+
+    p:hover {
+      background-color: lightgray;
+    }
+
+    table tr:last-child td {
+      color: red;
+    }
+
+    ul li:nth-child(even), table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    ul li:nth-child(odd), table tr:nth-child(odd) {
+      background-color: #e6e6e6;
+    }
+
+    p:first-letter {
+      font-size: 150%;
+    }
+
+    ::selection {
+      background-color: yellow;
+    }
+
+    p::before {
+      content: "\2192 "; /* Rightwards arrow Unicode character */
+    }
+
+    /* Task 6: :not and :is pseudo-selectors */
+    p:not(.special) {
+      color: gray;
+    }
+
+    :is(h2, h3) {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body id="top">
+  <!-- Task 2: Copy content of the "text" section -->
+  <main role="main">
+    <section id="text">
+      <!-- Content of the "text" section from the provided code -->
+      <header>
+        <h1>Text</h1>
+      </header>
+      <article id="text__headings">
+        <!-- Heading content here -->
+      </article>
+      <article id="text__paragraphs">
+        <!-- Paragraph content here -->
+        <header>
+          <h1>Paragraphs</h1>
+        </header>
+        <div>
+          <p>Paragraph content goes here.</p>
+          <!-- Task 3: Answers to questions -->
+          <h2>Selector Specificity and Calculation</h2>
+          <p>Selector specificity is a value that determines which CSS rule will be applied to an element. It is calculated based on the types of selectors used in the CSS rule. Specificity is calculated using four components: inline styles, IDs, classes, and elements. The more specific a selector is, the higher its specificity value.</p>
+          <h2>Complex Selectors</h2>
+          <p>Complex selectors are CSS selectors that use combinations of simple selectors to target elements. They can include multiple types of selectors such as element names, classes, IDs, attributes, pseudo-classes, and pseudo-elements. Complex selectors provide more precise targeting of elements within the document.</p>
+          <h2>Difference Between Pseudo-classes and Pseudo-elements</h2>
+          <p>Pseudo-classes are selectors that define the special state of an element, such as :hover for when an element is being hovered over. Pseudo-elements, on the other hand, target specific parts of an element's content, such as the first letter or line of text, using selectors like ::first-letter or ::first-line.</p>
+        </div>
+        <footer>
+          <p><a href="#top">[Top]</a></p>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <!-- Task 4: Google Fonts Linking -->
+  <script>
+    // Task 4: Load Roboto font
+    WebFontConfig = {
+      google: { families: [ 'Roboto:400,700' ] }
+    };
+    (function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+      wf.async = true;
+      s.parentNode.insertBefore(wf, s);
+    })(document);
+  </script>
+</body>
+</html>
